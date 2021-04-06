@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="countries">
+        <item>India</item>
+        <item>USA</item>
+        <item>Australia</item>
+        <item>Germany</item>
+        <item>Canada</item>
+        <item>Korea</item>
+        <item>China</item>
+        <item>Japan</item>
+    </string-array>
+
+    <integer-array name="colors">
+
+
+        <item>@color/roseStart</item>
+        <item>@color/roseEnd</item>
+        <item>@color/blueStart</item>
+        <item>@color/blueEnd</item>
+        <item>@color/greenStart</item>
+        <item>@color/greenEnd</item>
+        <item>@color/purpleStart</item>
+        <item>@color/purpleEnd</item>
+
+    </integer-array>
+
+</resources>

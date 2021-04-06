@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInfoSetActivity.UserGenderSetActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/gender_confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:background="@drawable/button_selector_light_blue"
+        android:enabled="false"
+        android:text="확인"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="00님의 성별을 알려주세요!"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/gender_male_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="남자"
+        android:textSize="36sp"
+        android:textColor="@drawable/text_select"
+        app:layout_constraintBottom_toTopOf="@+id/gender_confirm_button"
+        app:layout_constraintEnd_toStartOf="@+id/gender_female_text"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:focusable="true" />
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/gender_female_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="여자"
+        android:textSize="36sp"
+        android:textColor="@drawable/text_select"
+        app:layout_constraintBottom_toBottomOf="@+id/gender_male_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/gender_male_text"
+        app:layout_constraintTop_toTopOf="@+id/gender_male_text"
+        app:layout_constraintVertical_bias="0.0"
+        android:focusable="true" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

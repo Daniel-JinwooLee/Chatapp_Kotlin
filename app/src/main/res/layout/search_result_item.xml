@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/chat_preview_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="2dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/search_result_item_box"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/profilePic_search_result"
+            android:layout_width="77dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/boy" />
+
+        <TextView
+            android:id="@+id/nickname_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/profilePic_search_result"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Nickname" />
+
+        <TextView
+            android:id="@+id/recent_chat_time_search_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="x분전"
+            app:layout_constraintStart_toStartOf="@+id/nickname_text"
+            app:layout_constraintTop_toBottomOf="@+id/nickname_text" />
+
+        <TextView
+            android:id="@+id/short_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="안녕하세요~(자기소개)"
+            app:layout_constraintStart_toStartOf="@+id/nickname_text"
+            app:layout_constraintTop_toBottomOf="@+id/recent_chat_time_search_result" />
+
+        <ImageView
+            android:id="@+id/make_chat_room_icon"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/chat" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/light_light_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/short_bio"
+            app:srcCompat="@drawable/chat" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="공통 관심사:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/short_bio" />
+
+        <com.nex3z.flowlayout.FlowLayout
+            app:flChildSpacing="10dp"
+            app:flMaxRows="2"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/common_interests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:text="(공통 관심사)"
+            app:layout_constraintStart_toEndOf="@+id/textView18"
+            app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.uipractice">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UIPractice">
+        <activity android:name=".UserFragment.UserInfoChange.ShortBioChange"></activity>
+        <activity android:name=".UserFragment.UserInfoChange.BasicInfoChange" />
+        <activity android:name=".UserFragment.EnvironmentSettingActivity" />
+        <activity android:name=".UserFragment.SearchSettingActivity" />
+        <activity android:name=".LinkFragment.FriendInfoActivity" />
+        <activity android:name=".UserFragment.UserInfoChange.UserInfoChangeActivity" />
+        <activity android:name=".ChatFragment.NewPracticeActivity" />
+        <activity android:name=".ChatFragment.NewChatActivity" />
+        <activity android:name=".LoginActivity.StartActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity.LoginActivity" />
+        <activity android:name=".ChatFragment.ChatRoomActivity" />
+        <activity android:name=".UserInfoSetActivity.BeforeInterestSelectActivity" />
+        <activity android:name=".UserInfoSetActivity.MajorSetActivity" />
+        <activity android:name=".UserInfoSetActivity.SchoolSearchActivity" />
+        <activity android:name=".UserInfoSetActivity.JobSetActivity" />
+        <activity android:name=".UserInfoSetActivity.SchoolSelectActivity" />
+        <activity android:name=".UserInfoSetActivity.IsUserStudentActivity" />
+        <activity android:name=".UserInfoSetActivity.UserBirthdaySetActivity" />
+        <activity android:name=".UserInfoSetActivity.UserGenderSetActivity" />
+        <activity android:name=".UserInfoSetActivity.UserNicknameSetActivity" />
+        <activity
+            android:name=".UserInfoSetActivity.InterestSelectActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".LoginActivity.DashBoardActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

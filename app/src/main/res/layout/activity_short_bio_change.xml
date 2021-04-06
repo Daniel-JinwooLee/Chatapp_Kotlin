@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserFragment.UserInfoChange.BasicInfoChange">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:text="자기 소개" />
+
+
+    <EditText
+        android:background="@drawable/light_blue_round_corner_box"
+        android:layout_marginTop="40dp"
+        android:inputType="textMultiLine"
+        android:layout_gravity="top"
+        android:lines="8"
+        android:layout_width="match_parent"
+        android:hint="자기소개를 해보세요!"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="200dp" />
+
+</LinearLayout>

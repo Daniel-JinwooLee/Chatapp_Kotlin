@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserFragment.UserInfoChange.UserInfoChangeActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="30dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_age_profile_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="닉네임"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/user_nickname_profile_edit"
+                app:layout_constraintTop_toBottomOf="@+id/user_nickname_profile_edit" />
+
+            <TextView
+                android:id="@+id/user_nickname_profile_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginStart="52dp"
+                android:text="닉네임"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.283" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/user_gender_profile_edit"
+                android:layout_width="24dp"
+                android:layout_height="25dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginStart="24dp"
+                android:text="닉네임"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/user_age_profile_edit"
+                app:layout_constraintTop_toTopOf="@+id/user_age_profile_edit" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:text="자기소개"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginHorizontal="40dp"
+            android:textSize="20sp"
+            android:text="미안하다 이거 보여주려고 어그로끌었다.. 나루토 사스케 싸움수준 ㄹㅇ실화냐? 진짜 세계관최강자들의 싸움이다.. 그찐따같던 나루토가 맞나? 진짜 나루토는 전설이다.."
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="나의 관심사"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="내 정보"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_marginStart="40dp"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/job_icon_edit_profile"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="27dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@null"
+                android:layout_gravity="center_vertical"
+                android:hint="직업을 추가해 주세요" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginStart="40dp"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/school_icon_edit_profile"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="27dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@null"
+                android:layout_gravity="center_vertical"
+                android:hint="학교명 추가해 주세요" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginStart="40dp"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/major_icon_edit_profile"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="27dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@null"
+                android:layout_gravity="center_vertical"
+                android:hint="전공을 추가해 주세요" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/region_icon_edit_profile"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="27dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@null"
+                android:layout_gravity="center_vertical"
+                android:hint="지역을 추가해 주세요" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="내 성격"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginStart="40dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="이런 친구를 원해요"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginStart="40dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="사진"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginStart="40dp"/>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

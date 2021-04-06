@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingHorizontal="10dp"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/interest_confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:background="@drawable/button_selector_light_blue"
+        android:enabled="false"
+        android:text="확인"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_new_interest_button"
+        app:layout_constraintVertical_bias="0.391" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="관심사를 골라주세요! (3개 이상)"
+        android:textColor="@color/light_blue"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="40dp"
+
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="키워드 검색"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="5dp"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <ImageView
+        android:padding="10dp"
+        android:id="@+id/imageView9"
+        android:layout_width="37dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName4"
+        app:srcCompat="@drawable/search_blue2" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="10dp"
+        android:numColumns="2"
+        app:layout_constraintBottom_toTopOf="@+id/add_new_interest_button"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+        app:layout_constraintVertical_bias="0.85"
+        tools:layout_editor_absoluteX="-31dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_new_interest_button"
+        android:layout_width="248dp"
+        android:layout_height="53dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/pink_button"
+        android:text="+ 나만의 관심사 추가하기"
+        android:textColor="@color/pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.591"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.827" />
+
+    <ImageView
+        android:padding="10dp"
+        android:id="@+id/imageView10"
+        android:layout_width="55dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/add_new_interest_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/add_new_interest_button"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/basket" />
+
+    <TextView
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/textView23"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/red_circle"
+        android:text="6"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

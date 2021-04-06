@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingHorizontal="10dp"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/interest_confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:background="@drawable/button_selector_light_blue"
+        android:enabled="false"
+        android:text="확인"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.585"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mRecyclerView"
+        app:layout_constraintVertical_bias="0.616" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="키워드 검색"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="5dp"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:padding="10dp"
+        android:id="@+id/imageView9"
+        android:layout_width="37dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName4"
+        app:srcCompat="@drawable/search_blue2" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="402dp"
+        android:layout_height="422dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginTop="8dp"
+        android:numColumns="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="검색어와 일치하는 관심사가 없습니다  \n 관심사를 새로 추가해 보세요!"
+        android:textColor="@color/light_blue"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/mRecyclerView"
+        app:layout_constraintEnd_toEndOf="@+id/mRecyclerView"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/mRecyclerView"
+        app:layout_constraintTop_toTopOf="@+id/mRecyclerView"
+        app:layout_constraintVertical_bias="0.272" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_new_interest_button"
+        android:layout_width="248dp"
+        android:layout_height="53dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/pink_button"
+        android:text="+ 나만의 관심사 추가하기"
+        android:textColor="@color/purple_200"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/mRecyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView36"
+        app:layout_constraintVertical_bias="0.255" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
